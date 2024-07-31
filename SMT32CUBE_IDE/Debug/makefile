@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: Motor\ DC_Controle\ IHM.elf secondary-outputs
 
 # Tool invocations
-Motor\ DC_Controle\ IHM.elf Motor\ DC_Controle\ IHM.map: $(OBJS) $(USER_OBJS) C:\Users\User\Desktop\STM32\ Blue\ Pill\Projeto\ 01\ -\ \ Motor\ DC_Controle\ IHM\SMT32CUBE_IDE\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Motor DC_Controle IHM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\User\Desktop\STM32 Blue Pill\Projeto 01 -  Motor DC_Controle IHM\SMT32CUBE_IDE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Motor DC_Controle IHM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Motor\ DC_Controle\ IHM.elf Motor\ DC_Controle\ IHM.map: $(OBJS) $(USER_OBJS) C:\Users\User\Desktop\Portifolio\ de\ Projetos\Projeto\ 02\ -\ \ Motor\ DC_Controle\ IHM\SMT32CUBE_IDE\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Motor DC_Controle IHM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\User\Desktop\Portifolio de Projetos\Projeto 02 -  Motor DC_Controle IHM\SMT32CUBE_IDE\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Motor DC_Controle IHM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

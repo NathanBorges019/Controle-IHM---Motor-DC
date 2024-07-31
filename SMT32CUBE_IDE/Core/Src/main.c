@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+ /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -115,6 +115,7 @@ void EE_Write(uint8_t devAddress, uint8_t memAddress, uint8_t data){
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -216,8 +217,8 @@ int main(void)
 	  		if ((aux_running == 1) && (HAL_GPIO_ReadPin(ENTER_GPIO_Port, ENTER_Pin)))
 	  		{
 	  			a_inc = a_inc;
-	  			uint8_t memAddress = 0x00;
-	  			EE_Write(EEPROM_ADDRESS, memAddress, a_inc);
+	  			//uint8_t memAddressAccel = a_inc;
+	  			//EE_Write(EEPROM_ADDRESS, memAddressAccel, a_inc);
 	  			aux_accel = 0;
 	  			ENTER_Boucing();
 	  			Buzzer_Teclas();
@@ -251,8 +252,8 @@ int main(void)
 	  		if ((aux_decel == 1) && (HAL_GPIO_ReadPin(ENTER_GPIO_Port, ENTER_Pin)))
 	  		{
 	  			r_inc = r_inc;
-	  			uint8_t memAddress = 0x01;
-	  			EE_Write(EEPROM_ADDRESS, memAddress, r_inc);
+	  			//uint8_t memAddressRun = r_inc;
+	  			//EE_Write(EEPROM_ADDRESS, memAddressRun, r_inc);
 	  			inc_running = 0;
 	  			ENTER_Boucing();
 	  			Buzzer_Teclas();
@@ -286,8 +287,8 @@ int main(void)
 	  		if ((config_finish == 1) && (HAL_GPIO_ReadPin(ENTER_GPIO_Port, ENTER_Pin)))
 	  		{
 	  			d_inc = d_inc;
-	  			uint8_t memAddress = 0x02;
-	  			EE_Write(EEPROM_ADDRESS, memAddress, d_inc);
+	  			//uint8_t memAddress = 0x02;
+	  			//EE_Write(EEPROM_ADDRESS, memAddress, d_inc);
 	  			inc_decel = 0;
 	  			ENTER_Boucing();
 	  			Buzzer_Teclas();
@@ -561,7 +562,6 @@ int main(void)
 
   	}
   /* USER CODE END 3 */
-
 /**
   * @brief System Clock Configuration
   * @retval None
